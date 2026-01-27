@@ -10,3 +10,6 @@ console.log(os.cpus());// so this is use for the know about our system ..
 
 // Globle Object is an object that is available in all modules by defult ...
 // You do not need to import or require it to use it ..
+// console.log(" hey this is Globle Object ");
+
+//console.log(process.cwd()); give path where we store this file 
