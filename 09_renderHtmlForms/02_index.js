@@ -18,6 +18,11 @@ app.get('/login',(req,resp)=>{
 app.post('/submit',(req,resp)=>{
     resp.send("<h1>Login SuccessFull !!!</h1>")
 })
+app.get('/about',(req,resp)=>{
+    const aboutPath=path.resolve('./html/about.html')
+    resp.sendFile(aboutPath);
+
+})
 // this method handel multipal case like 404 , midllwhere etc
 app.use((req,resp)=>{
     const notFound=path.resolve('./html/404_page.html')
