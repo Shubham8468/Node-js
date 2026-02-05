@@ -1,0 +1,120 @@
+/* Reset */
+/* In normal case its not work . 
+    this file also show on the browse in network section but its give 404 status 
+    
+    How ti fix its 
+    
+    give absalute path of this file in js */
+
+
+    /* ++++++++++ How To add absalute path in Express ++++++++++++++++++++++ */
+
+    /* 1.  const cssPath=path.resolve('css/')
+
+        2.  Now we add    app.use(express.static(cssPath))
+     */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+    
+ 
+}
+body{
+     background-color: #212121;
+  
+}
+
+/* About Section */
+.about-section {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f9fafb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* Container */
+.about-container {
+  max-width: 900px;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Main Title */
+.about-title {
+  font-size: 36px;
+  color: #1f2933;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Paragraphs */
+.about-description,
+.about-text,
+.about-footer-text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #4b5563;
+  margin-bottom: 16px;
+}
+
+/* Sub Titles */
+.about-subtitle {
+  font-size: 24px;
+  color: #111827;
+  margin: 28px 0 12px;
+}
+
+/* List */
+.about-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.about-list-item {
+  font-size: 16px;
+  color: #374151;
+  padding-left: 24px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+/* Custom bullet */
+.about-list-item::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #2563eb;
+  font-size: 14px;
+}
+
+/* Footer Text */
+.about-footer-text {
+  margin-top: 30px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 25px;
+  }
+
+  .about-title {
+    font-size: 28px;
+  }
+
+  .about-subtitle {
+    font-size: 20px;
+  }
+}
+
