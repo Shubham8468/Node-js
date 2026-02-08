@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User List</title>
+</head>
+<body>
+    <h1>User List Page </h1>
+    <ul>
+        <% for(let ele of users) {%>
+            <li><%= ele %></li>
+
+         <%} %>
+
+    </ul>
+    <% if(isLogin) { %>
+        <p>User Is loggin</p>
+    <% } %>
+
+
+
+
+
+
+</body>
+</html>
