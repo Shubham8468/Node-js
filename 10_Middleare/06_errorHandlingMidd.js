@@ -34,7 +34,6 @@ app.get('/users',(req,resp)=>{
 
 app.use((error,req,resp,next)=>{
      resp.status(error.status || 500).sendFile(htmlFilePath+'/error.html')
-    
 });
 
 app.listen(4800);
