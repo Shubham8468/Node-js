@@ -42,6 +42,8 @@
 
 // Buttons
 
+//iske inder vo chije hogi jo user to display hogi 
+
 // 👉 Does NOT contain business logic
 
 
@@ -73,3 +75,14 @@
 // ✔ Easy testing (unit testing)
 // ✔ Parallel development
 // ✔ Better scalability
+
+
+import express from 'express'
+import { handelUsers } from './controller/user.controller.js';
+
+const app=express();
+
+app.set('view engine','ejs')
+app.get('/users',handelUsers)
+
+app.listen(4800);
