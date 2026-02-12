@@ -28,7 +28,7 @@ app.get('/',(req,resp)=>{
 //++++++++++++++ How to create Dynamic Route ++++++++++++++++++
 app.get('/user/:name',(req,resp)=>{
     const userName=req.params.name; // this is use for the collect Dynamic like data 
-    //Inportent params. jo hm :hoga vahi likhenge 
+    //Importent params. jo hm :hoga vahi likhenge 
     console.log(userName)
     resp.send(`<h1>Login user Name : ${userName}</h1>`)
 
