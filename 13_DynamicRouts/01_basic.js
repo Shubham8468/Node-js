@@ -10,11 +10,7 @@
                                     //    /user/3
 
 import express from 'express'
-
 const app= express();
-
-
-
 app.get('/',(req,resp)=>{
     const MCU=['Ironman','thor','loki','hulk','CaptainAmrica'];
     let data = `<ul>`
@@ -31,10 +27,5 @@ app.get('/user/:name',(req,resp)=>{
     //Importent params. jo hm :hoga vahi likhenge 
     console.log(userName)
     resp.send(`<h1>Login user Name : ${userName}</h1>`)
-
 })
-
-
-
-
 app.listen(4800);
